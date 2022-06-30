@@ -1,0 +1,58 @@
+.contact{
+    .container{
+        background-color: var(--color-light-grey);
+        padding: 4rem;
+        text-align: center;
+        @media screen and (min-width: $from-small) {
+            text-align: left;
+        }
+        .grid:first-child{
+            h2{
+                font-size: 1.8rem;
+                max-width: 20rem;
+                font-weight: bold;
+            }
+            p{
+                color: #5C5C5C;
+                max-width: 20rem;
+            }
+            .column:last-child{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                @media screen and (min-width: $from-small) {
+                    align-items: flex-end;
+                    justify-content: center;
+                    display: flex;
+                }
+                .btn__dark{
+                    margin-top: 1rem;
+                    @media screen and (min-width: $from-small) {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        hr{
+            color: var(--color-gray);
+            margin: 2rem 0;
+        }
+        .grid:last-child{
+            ul{
+                display: flex;
+                >li{
+                    margin-right: 2rem;
+                    margin: 0 auto;
+                    @media screen and (min-width: $from-small) {
+                        margin: inherit;
+                        margin-right: 2rem;
+                    }
+                    img{
+                        height: fit-content;
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

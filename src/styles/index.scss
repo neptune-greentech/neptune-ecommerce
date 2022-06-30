@@ -1,0 +1,39 @@
+@import 'settings/colors';
+@import 'settings/sizes';
+@import 'settings/container';
+@import 'settings/fonts';
+
+@import 'tools/functions';
+@import 'tools/mixins';
+
+@import 'generic/reset';
+
+@import 'elements/pages';
+@import 'elements/headings';
+@import 'elements/texts';
+@import 'elements/forms';
+@import 'elements/buttons';
+
+@import 'objects/layouts';
+@import 'objects/animations';
+
+@import 'components/bar';
+@import 'components/nav';
+@import 'components/header';
+@import 'components/testimonials';
+@import 'components/footer';
+@import 'components/blog';
+@import 'components/article';
+@import 'components/partners';
+@import 'components/reassurance';
+@import 'components/contact';
+@import 'components/newsletter';
+
+@import 'pages/home';
+@import 'pages/page';
+@import 'pages/woocommerce';
+@import 'pages/archive';
+@import 'pages/product';
+@import 'pages/shop';
+@import 'pages/checkout';
+@import 'pages/compte';

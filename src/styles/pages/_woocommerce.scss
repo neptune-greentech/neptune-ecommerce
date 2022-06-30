@@ -1,0 +1,18 @@
+.woocommerce, .home{
+    ul.products {
+        li.product {
+            .woocommerce-loop-product__title{
+                font-family: $f-light;
+                padding: 0;
+                font-weight: normal;
+            }
+            .price {
+                span{
+                    display: initial;
+                    font-weight: 600;
+                    font-family: "sf-pro-display-medium",sans-serif;
+                }
+            }
+        }
+    }
+}

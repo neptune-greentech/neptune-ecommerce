@@ -1,0 +1,110 @@
+// --------------------------------------------------
+// This file contains all grid system.
+// --------------------------------------------------
+
+$spacing-grid: 2%;
+
+.grid {
+    width: 100%;
+    @media all and (min-width: $from-small) {
+        display: flex;
+    }
+    .column {
+        width: 100%;
+        margin-bottom: $spacing-grid;
+        @media all and (min-width: $from-small) {
+            margin-bottom: 0;
+            margin-right: $spacing-grid;
+            &--1 {
+                width: (100% / 12) - ($spacing-grid * 11 / 12);
+            }
+            &--2 {
+                width: (100% / 6) - ($spacing-grid * 10 / 12);
+            }
+            &--3 {
+                width: (100% / 4) - ($spacing-grid * 9 / 12);
+            }
+            &--4 {
+                width: (100% / 3) - ($spacing-grid * 8 / 12);
+            }
+            &--5 {
+                width: (100% / 2.4) - ($spacing-grid * 7 / 12);
+            }
+            &--6 {
+                width: (100% / 2) - ($spacing-grid * 6 / 12);
+            }
+            &--7 {
+                width: (100% / 1.714285714285714) - ($spacing-grid * 5 / 12);
+            }
+            &--8 {
+                width: (100% / 1.5) - ($spacing-grid * 4 / 12);
+            }
+            &--9 {
+                width: (100% / 1.333333333333333) - ($spacing-grid * 3 / 12);
+            }
+            &--10 {
+                width: (100% / 1.2) - ($spacing-grid * 2 / 12);
+            }
+            &--11 {
+                width: (100% / 1.090909090909091) - ($spacing-grid * 1 / 12);
+            }
+            &--12 {
+                width: 100%;
+            }
+        }
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
+
+$direction: (
+        column: column,
+        column--reverse: column-reverse,
+        row: row,
+        row--reverse: row-reverse
+);
+
+$align: (
+        top: flex-start,
+        bottom: flex-end,
+        center: center
+);
+
+$justify: (
+        left: flex-start,
+        right: flex-end,
+        center: center,
+        justify: space-between,
+        spaced: space-around
+);
+
+$align-self: (
+        top: flex-start,
+        bottom: flex-end,
+        middle: center
+);
+
+@each $property, $value in $direction {
+    .#{$property} {
+        flex-direction: $value;
+    }
+}
+
+@each $property, $value in $align {
+    .align--#{$property} {
+        align-items: $value;
+    }
+}
+
+@each $property, $value in $justify {
+    .align--#{$property} {
+        justify-content: $value;
+    }
+}
+
+@each $property, $value in $align-self {
+    .align__self--#{$property} {
+        align-self: $value;
+    }
+}

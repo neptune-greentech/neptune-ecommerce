@@ -1,0 +1,147 @@
+.woocommerce-cart{
+    .block{
+        margin: 0 0 8rem 0;
+        .max-container{
+            position: relative;
+            left: 0;
+            right: 0;
+            margin-top: -3rem;
+            margin-bottom: 0.5rem;
+            z-index: 1;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            background-color: var(--color-light-grey);
+            .container{
+                padding: 4rem 0;
+                width: 100%;
+                .entry-title{
+                    border-bottom: 1px solid var(--color-gray);
+                    margin-bottom: 2rem;
+                }
+                .woocommerce-breadcrumb{
+                    margin:0 0 1.5rem               
+                }
+            }
+        }
+    }
+    .woocommerce{
+        display: block;
+        @media screen and (min-width: $from-small) {
+            display: flex;
+        }
+    }
+    .woocommerce-info, .woocommerce-notices-wrapper {
+        border-top-color: var(--color-pink);
+        background-color: var(--color-white);
+        display: none;
+    }
+    .woocommerce-error::before, .woocommerce-info::before, .woocommerce-message::before{
+        content:"";
+    }
+    .woocommerce a.button{
+        background-color: var(--color-pink);
+        color:var(--color-white);
+    }
+    .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
+        width: 100%;
+        float: none;
+        background-color: #fff;
+        padding: 1rem;
+    }
+    .woocommerce table.shop_table {
+        border: 0 ;
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        border-collapse: none;
+        border-spacing: 0 1rem;
+    }
+    .woocommerce-cart-form__cart-item.cart_item{
+        background-color: var(--color-white);
+        margin-bottom: 1rem !important;
+    }
+    .cart-collaterals .cart_totals tr th{
+        border-top: 0 !important;
+    }
+    td.actions{
+        padding: 2rem 0 !important;
+    }
+    .woocommerce table.shop_table td{
+        padding: 1rem;
+        @media screen and (min-width: $from-small) {
+            padding: 1.5rem 0.5rem;
+        }
+    }
+    td, tr{
+        border:0 !important;
+    }
+    table.cart td.actions .coupon .input-text{
+        float: left;
+        text-align: left;
+        width: 9rem;
+        border: 1px solid var(--color-gray);
+        padding: 0.3rem 0.5rem;
+        margin: 0 0.5rem 0 0;
+        outline: 0;
+    }
+    .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td{
+        background-color: #fff;
+    }
+    .woocommerce table.shop_table tbody:first-child tr:first-child td, .cart-collaterals .cart_totals tr td{
+        padding: .5rem !important;
+    }
+    .woocommerce a.remove {
+        display: block;
+        font-size: 1.5em;
+        height: 1em;
+        width: 1em;
+        text-align: center;
+        line-height: 1;
+        border-radius: 100%;
+        color: transparent !important;
+        text-decoration: none;
+        font-weight: 700;
+        border: 0;
+        &:hover{
+            background: transparent !important;;
+        }
+    }
+    .quantity input{
+        border: 1px solid var(--color-gray);
+        border-radius: 10px;
+        background-color: transparent;
+        font-weight: normal;
+        padding: .7rem;
+    }
+    .quantity .qty {
+        width: 5rem;
+        text-align: center;
+    }
+    .jour__panier .actions{
+        background-color: transparent !important;
+    }
+    .code__promo{
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        p{
+            font-weight: bold;
+            padding-bottom: 0.5rem;
+        }
+        input{
+            border: 1px solid var(--color-gray);
+            padding: 0.7rem;
+            border-radius: 10px;
+        }
+        button{
+            border: 1px solid var(--color-gray);
+            border-radius: 10px;
+            background-color: transparent;
+            font-weight: normal;
+        }
+    }
+}

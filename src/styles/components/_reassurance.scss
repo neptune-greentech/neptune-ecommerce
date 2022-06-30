@@ -1,0 +1,36 @@
+.reassurance{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .container{
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            @media screen and (min-width: $from-small) {
+                display: flex;
+            }
+            .reassurance{
+                width: 100%;
+                img{
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    height: fit-content;
+                    height: 3rem;
+                    width: 4rem;
+                }
+                span{
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 1rem auto;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

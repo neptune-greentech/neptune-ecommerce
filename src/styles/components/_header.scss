@@ -1,0 +1,183 @@
+// --------------------------------------------------
+// This file contains all header style.
+// --------------------------------------------------
+
+header {
+    width: 100%;
+    height: 12rem;
+    background-color: var(--color-background);
+    position: relative;
+    top: 0;
+    left: 0;
+    .container {
+        height: 70%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        @media screen and (min-width: $from-large) {
+            display: block;
+            height: 100%;
+        }
+    }
+    .header_top{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        padding-top: 0rem;
+        position: relative;
+        @media screen and (min-width: $from-large) {
+            padding-top: 1.5rem;
+        }
+        .logo {
+            img {
+                height: 3rem !important;
+                width: 100%;
+            }
+        }
+        #header-widget-area {
+            width: 100%;
+            position: relative;
+        }
+        .search {
+            width: 100%;
+            position: relative;
+            display:none;
+            padding-right: 1.5rem;
+            @media screen and (min-width: $from-large) {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .wc-block-product-search__field {
+            width: 100%;
+            max-width: 25rem;
+            background-color: var(--color-white);
+            border-right: none;
+            padding: 0.5rem;
+            height: 2.2rem;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            color: var(--color-background);
+            border: none;
+            font-size: 0.70rem  !important;
+            &:focus {
+                color: var(--color-background);
+            }
+            &::placeholder {
+                color: #757575;
+            }
+        }
+        .wc-block-product-search__button {
+            width: 4rem;
+            height: 2.2rem;
+            background: var(--color-gray);
+            text-align: center;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            padding: 0 !important;
+            margin: 0 !important;
+            display: block;
+        }
+        .wc-block-featured-product.aligncenter, 
+        .wc-block-featured-product.alignleft, 
+        .wc-block-featured-product.alignright, 
+        .wc-block-product-search .wc-block-product-search__fields {
+            display: flex;
+        }
+        .wp-block-woocommerce-product-search {
+            max-width: 25rem;
+            width: 100%;
+        }
+        .wc-block-product-search__button {
+            width: 4rem;
+            border: none;
+            height: 2.2rem;
+            background: var(--color-gray);
+            text-align: center;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .icone_menu{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            position: absolute;
+            right: 0;
+            @media screen and (min-width: $from-large) {
+                position: relative;
+            }
+            .compte{
+                margin-right: 1rem;
+            }
+            .compte img, .panier img{
+                width: 1.5rem;
+                height: 1.5rem;
+                max-width: initial !important;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                display: flex;
+                @media screen and (min-width: $from-large) {
+                    width: 1.2rem;
+                }
+            }
+        }
+        .cart-custom {
+            display: flex;
+            p{
+                color:var(--color-background);
+                background-color: var(--color-primary);
+                padding: .1rem .2rem;
+                width: 1.2rem;
+                border-radius: 50%;
+                height: 1.2rem;
+                margin-top: -0.5rem;
+                margin-right: -0.5rem;
+                font-size: .8rem;
+                z-index: 1;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+        }
+    }
+    hr{
+        color: var(--color-gray);
+        margin: 1rem 0;
+    }
+    .mobile_menu{
+        position: fixed;
+        top: 0;
+        right: -20rem;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    header {
+        .toggle {
+            display: none;
+        }
+        .mobile_menu, #menu-menu-principal-1 {
+            display: none;
+        }
+        .desktop_menu, #menu-menu-principal {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            li:nth-child(2){
+                margin-left: 0 !important;
+            }
+            li:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}

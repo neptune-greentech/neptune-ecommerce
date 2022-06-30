@@ -1,0 +1,28 @@
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--color-background);
+    font-family: $f-medium;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-background);
+    line-height: 2rem;
+    font-family: $f-medium;
+}
+
+h3 {
+    font-family: $f-light;
+    color: var(--color-background);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+p, a, li, span{
+    line-height: normal;
+    font-family: $f-light;
+    color: var(--color-background);
+}
